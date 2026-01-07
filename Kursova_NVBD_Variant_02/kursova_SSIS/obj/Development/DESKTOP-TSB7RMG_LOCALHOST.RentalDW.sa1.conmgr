@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-TSB7RMG_LOCALHOST.RentalDW.sa1"
+  DTS:DTSID="{0C21BF87-56A8-405A-8B1D-149E930C7E1C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-TSB7RMG\LOCALHOST;User ID=sa;Initial Catalog=RentalDW;Provider=SQLOLEDB.1;Application Name=SSIS-kursova_SSIS-{0C21BF87-56A8-405A-8B1D-149E930C7E1C}DESKTOP-TSB7RMG\LOCALHOST.RentalDW.sa1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAz2CgK8XgR0OSe6x+1+hl1gAAAAACAAAAAAAQZgAAAAEAACAAAABHMdACSg/LRVgnAFEmL0twjPZyuIINae60FhFnxY5GyAAAAAAOgAAAAAIAACAAAACJNCzroR7TDTmhGG8Hoau8TiYhgFJyoIQ0WqGJyeUsFHAAAABpgjmkW7RTwvVwtIiAOBp+a40mLe+OK8VH9+1zQyZMsOhW0HUCkRBafBo9xMmIc85FMCje9x8tGNI9pGp9xIpOe/G8aQXMvNbSHr+VITrQH5SzuGC0KkRGROSfsFFW3+cexO7+fwoF5bMPvjZZZx9yQAAAAFvaZaDXqtJibjDIfdy8wuYUYTrTMsOV2zd35uN7nSMOYl9Jr8ENHyLp6FXqDGBKX/EPoWwXsJA+Wr+YwehV+oc=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

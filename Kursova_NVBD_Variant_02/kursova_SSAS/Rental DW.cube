@@ -1,0 +1,842 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b31f52cd-80c1-48cf-8c99-e8e579168759" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Rental DW</ID>
+  <Name>Rental DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5464" scrolltop="10" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="24934" y="12742" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01cc00009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimPremises" left="20" top="11754" logicalid="16" controlid="1" masterid="0" hint1="0" hint2="0" width="3471" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008f0d00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimPremises" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDate" left="11445" top="0" logicalid="17" controlid="2" masterid="0" hint1="0" hint2="0" width="3471" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008f0d00003b0d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimBuildings" left="14412" top="11934" logicalid="18" controlid="3" masterid="0" hint1="0" hint2="0" width="3450" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00007a0d00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimBuildings" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimContracts" left="8498" top="11934" logicalid="19" controlid="4" masterid="0" hint1="0" hint2="0" width="3514" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ba0d0000d30b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimContracts" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactPayments" left="11635" top="5787" logicalid="20" controlid="5" masterid="0" hint1="0" hint2="0" width="3090" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000120c0000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactPayments" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTenants" left="5891" top="6327" logicalid="21" controlid="6" masterid="0" hint1="0" hint2="0" width="3344" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000100d00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimTenants" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactInvoices" left="491" top="5607" logicalid="22" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactInvoices" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1356" top="9054" logicalid="23" controlid="8" masterid="0" hint1="0" hint2="0" width="935" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactInvoices_DimPremises]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1755" y="11754" />
+              <point x="1755" y="10554" />
+              <point x="1991" y="10554" />
+              <point x="1991" y="9354" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3191" top="1294" logicalid="24" controlid="9" masterid="0" hint1="0" hint2="0" width="8554" height="4836" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactInvoices_DimDate]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="14" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11445" y="1693" />
+              <point x="7468" y="1693" />
+              <point x="7468" y="5830" />
+              <point x="3491" y="5830" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12781" top="2888" logicalid="25" controlid="10" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactPayments_DimDate]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13180" y="3387" />
+              <point x="13180" y="5787" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="13430" top="9234" logicalid="26" controlid="11" masterid="0" hint1="0" hint2="0" width="3107" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactPayments_DimBuildings]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16137" y="11934" />
+              <point x="16137" y="10734" />
+              <point x="13730" y="10734" />
+              <point x="13730" y="9534" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3191" top="8830" logicalid="27" controlid="12" masterid="0" hint1="0" hint2="0" width="5607" height="5017" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactInvoices_DimContracts]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="7" sourceattachpoint="18" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8498" y="13447" />
+              <point x="5995" y="13447" />
+              <point x="5995" y="9130" />
+              <point x="3491" y="9130" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9856" top="9234" logicalid="28" controlid="13" masterid="0" hint1="0" hint2="0" width="2524" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactPayments_DimContracts]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="6" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10255" y="11934" />
+              <point x="10255" y="10734" />
+              <point x="12080" y="10734" />
+              <point x="12080" y="9534" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8935" top="7261" logicalid="29" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactPayments_DimTenants]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="5" sourceattachpoint="15" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9235" y="7660" />
+              <point x="11635" y="7660" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3191" top="7180" logicalid="30" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="880" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactInvoices_DimTenants]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="7" sourceattachpoint="14" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5891" y="7660" />
+              <point x="4691" y="7660" />
+              <point x="4691" y="7480" />
+              <point x="3491" y="7480" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5464</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>10</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>85</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="9ecdb752-78dd-45ff-ba90-cf3320d466c6">
+      <ID>Dim Tenants</ID>
+      <Name>Dim Tenants</Name>
+      <DimensionID>Dim Tenants</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="45ac12d0-7f12-40da-bf0a-4ef4126be1a7">
+          <AttributeID>Tenant Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72440bc0-6058-4b3a-b734-3b91d859df0a">
+          <AttributeID>Tenant Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d03ffe72-b079-4271-b106-20504cb0cf6f">
+          <AttributeID>Contact Info</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2a554796-d1e9-43bb-a110-f3948e8246ab">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0095e015-1653-477e-b0d9-012ac629fbcd">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f0c71507-6e35-44cf-8c16-cfebb25facf9">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8c71b6be-cec5-469d-8943-b62ae1decdbe">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="172b5f56-fef8-402c-adc6-405cd2201164">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7e2458bb-8f99-4d29-b443-45a60abac27a">
+      <ID>Dim Buildings</ID>
+      <Name>Dim Buildings</Name>
+      <DimensionID>Dim Buildings</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e747a124-8f2f-4aec-90d1-eea6426d7af4">
+          <AttributeID>Building Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d429f562-aca0-42db-a22e-4784b8b4bd2a">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="17e6a860-a772-4447-9056-2e543c51ec98">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7acf6e5a-fe63-4996-b08e-4d5f3003375a">
+          <AttributeID>District</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5e1688ac-f0c9-4834-a3e6-a1ccdf459ea8">
+      <ID>Dim Contracts</ID>
+      <Name>Dim Contracts</Name>
+      <DimensionID>Dim Contracts</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="23e7cb3d-fdb4-4e1b-b6c1-200c989e98d6">
+          <AttributeID>Contract Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ef728b0f-c8d1-4bdb-9bdf-cbe21b82625b">
+          <AttributeID>Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29c5e831-22e5-4c72-b681-0116e5c95138">
+          <AttributeID>End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94fda319-163f-479b-9b9f-e92dfc16c7a0">
+          <AttributeID>Payment Day</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1b02eb82-5bd0-4862-891e-73b312eb7182">
+      <ID>Dim Premises</ID>
+      <Name>Dim Premises</Name>
+      <DimensionID>Dim Premises</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="59bd0cfc-0cf8-4c64-8796-b8e339fa4a44">
+          <AttributeID>Premise Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="42504dab-0a18-4c6c-8f12-7b58c747937a">
+          <AttributeID>Premise Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dd396557-c8f6-41f8-b8b0-87590c8a7bf1">
+          <AttributeID>Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="631a861c-aa7b-4a4c-bee1-153b1da5d249">
+          <AttributeID>Floor Level</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="35d46103-2bdf-4b82-9b82-06a3f96f3365">
+      <ID>Fact Payments</ID>
+      <Name>Fact Payments</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c783db6c-7369-4ad3-bf3f-0b29d750c8dc">
+          <ID>Payment Alt Key</ID>
+          <Name>Payment Alt Key</Name>
+          <Source dwd:design-time-name="c0b9da44-d275-4eab-b27f-82d84022c27d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7c445eb9-a2a7-4b1e-953d-66ba4a7951e3">
+              <TableID>dbo_FactPayments</TableID>
+              <ColumnID>PaymentAltKey</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="32614ebe-af22-4e0a-96f6-193391c37c4f">
+          <ID>Amount Paid</ID>
+          <Name>Amount Paid</Name>
+          <Source dwd:design-time-name="c6799471-ba29-4336-82e6-2beffc6d18a6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cea7d4b9-0397-4866-9e0e-678bfb6a7c45">
+              <TableID>dbo_FactPayments</TableID>
+              <ColumnID>AmountPaid</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9465573c-fe78-467a-b78e-39031d0f8c98">
+          <ID>Fact Payments Count</ID>
+          <Name>Fact Payments Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="7e4a14a2-2f81-406a-91ef-5c144688991c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="82fb57a1-9a13-4cef-a12c-178db756d2f7">
+              <TableID>dbo_FactPayments</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="688885b2-c5f9-4537-8c62-46dc4786e422">
+          <ID>Minimum Amount Paid</ID>
+          <Name>Minimum Amount Paid</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="ac90ef14-6a0c-419f-ba3c-9c2334ca3a89">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="15ef9057-f8c3-44aa-9c53-5f6276474454">
+              <TableID>dbo_FactPayments</TableID>
+              <ColumnID>AmountPaid</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="26a4a6a0-709f-4784-af19-e39209a537a3">
+          <ID>Maximum Amount Paid</ID>
+          <Name>Maximum Amount Paid</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="b98bab2a-2949-401b-a3f8-d40fce8753eb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1443a124-f92f-4dd0-990a-d074cad8b0d6">
+              <TableID>dbo_FactPayments</TableID>
+              <ColumnID>AmountPaid</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="68206214-c18d-410a-823c-0b46fae66953">
+          <CubeDimensionID>Dim Tenants</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d8f6b1da-be88-4083-86a9-69a5b7bb77ef">
+              <AttributeID>Tenant Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="77217b05-8483-4ac0-bab3-69aa4b88a1fc">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="90641486-5cc5-408a-b2ca-2aa873ee0cdf">
+                    <TableID>dbo_FactPayments</TableID>
+                    <ColumnID>TenantKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d3b8b4b4-5638-4e2c-9a0c-84841447c103">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3df6e177-b97e-4037-a0e0-afab4cea3f55">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2dbbfce7-4461-42a6-8554-45980e2e0404">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4674fcb5-6cf7-4ca2-8821-9e3dd4f85946">
+                    <TableID>dbo_FactPayments</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="463bd1ec-10c2-4c34-847d-71718b315a85">
+          <CubeDimensionID>Dim Buildings</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fac368d3-7abd-4cf6-9a6f-4adaad4f211c">
+              <AttributeID>Building Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bf4dcd48-e513-4a7c-8d8a-337d17eaa347">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fb0a9fa7-0930-4415-8768-0f5bf0a33491">
+                    <TableID>dbo_FactPayments</TableID>
+                    <ColumnID>BuildingKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e3e96a1c-b178-44bb-b333-9a09c7f2e88d">
+          <CubeDimensionID>Dim Contracts</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="37b41c76-5bc7-4595-bbb1-d0437ef0a653">
+              <AttributeID>Contract Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5f245e14-799e-404b-aa9b-60dc8e7f2582">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ff327849-7cb5-4f4d-b198-b1350aa6920d">
+                    <TableID>dbo_FactPayments</TableID>
+                    <ColumnID>ContractKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="bffb9c32-41c0-41d9-a9fe-50cad011f86a">
+      <ID>Fact Invoices</ID>
+      <Name>Fact Invoices</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c9d18ba1-4601-4933-aad5-7a6bc0d27f35">
+          <ID>Invoice Alt Key</ID>
+          <Name>Invoice Alt Key</Name>
+          <Source dwd:design-time-name="edce130b-0946-45c6-9920-322d628442a1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="68f18958-19da-42b0-a744-c7869f515d79">
+              <TableID>dbo_FactInvoices</TableID>
+              <ColumnID>InvoiceAltKey</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0e62dbf8-e620-4f6d-927d-4944c4b19db4">
+          <ID>Amount</ID>
+          <Name>Amount</Name>
+          <Source dwd:design-time-name="98ec8e83-feb4-4470-9596-706e4fed2012">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="183152b6-4d9e-4746-8fcb-d151c217e621">
+              <TableID>dbo_FactInvoices</TableID>
+              <ColumnID>Amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="afa51418-bd6c-4ee0-8f43-d976c4a90074">
+          <ID>Fact Invoices Count</ID>
+          <Name>Fact Invoices Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="db2f508c-d821-40cc-9ac0-b28b35308706">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6f8b6e42-8201-48e0-bb66-88ff05b6b30c">
+              <TableID>dbo_FactInvoices</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0a8b512b-6f63-4fbf-b946-72d9e1853499">
+          <CubeDimensionID>Dim Contracts</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="77b4a512-34e8-44ac-aeef-0e28de04c894">
+              <AttributeID>Contract Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="48a6e027-f4fb-496c-84bd-749be61898f4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c84c115f-78ac-479c-9d85-e632243e5023">
+                    <TableID>dbo_FactInvoices</TableID>
+                    <ColumnID>ContractKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6f0ea41b-67b7-4088-8ba1-d7458c0204c7">
+          <CubeDimensionID>Dim Tenants</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9704f4c2-78ea-4ae0-833f-7208e6a7f17c">
+              <AttributeID>Tenant Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="015d0cc7-2df5-419e-ade5-5f3cd48a57f3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c39384e-3f5a-40d1-bf10-fa9865dde98c">
+                    <TableID>dbo_FactInvoices</TableID>
+                    <ColumnID>TenantKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="72c2cf95-4977-4a5a-9153-1df3ac63a5cb">
+          <CubeDimensionID>Dim Premises</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89f188f0-53b3-4166-abc0-e3e9f7bbc52f">
+              <AttributeID>Premise Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e2ffd17e-86d1-4dad-a93b-9dc041735c1f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="562a405b-256d-453d-b1e9-79a912553f89">
+                    <TableID>dbo_FactInvoices</TableID>
+                    <ColumnID>PremiseKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="977d5b65-71c0-4a69-a678-78735ea50eb9">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="07c20496-a067-4cb4-8f41-bb0bf6ba7ac3">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ef163df4-de5f-4ac9-ab39-2cdff418d8fd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="894ebf58-6c74-4cd5-beb3-4e4aa9af641b">
+                    <TableID>dbo_FactInvoices</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="997b3d57-7a4d-4316-b9df-645ef96b5a52">
+      <ID>Fact Payments 1</ID>
+      <Name>Fact Payments 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ee8bfc83-4454-4d77-96c3-d63e1a5f7f21">
+          <ID>Tenant Key Distinct Count</ID>
+          <Name>Tenant Key Distinct Count</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="476c2fbf-5c7f-414b-bc6f-c33512a5c03e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bc83b46e-cbf1-4bb0-bcf5-b6d381325ce9">
+              <TableID>dbo_FactPayments</TableID>
+              <ColumnID>TenantKey</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="452e5eb7-75e5-4361-a8db-e1228466b905">
+          <CubeDimensionID>Dim Tenants</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e6fc1e0c-971e-453b-b73d-0ead0988682f">
+              <AttributeID>Tenant Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="178a7fbf-47ad-4d23-a25f-3b0800b281d3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fc2e9f3e-9bed-4f0c-9281-af55a252e136">
+                    <TableID>dbo_FactPayments</TableID>
+                    <ColumnID>TenantKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="35603242-7320-4f0e-8c0b-bdc9cc8261da">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d0ba128c-2d74-45a5-aa81-9be05fffe632">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="98e49a7f-84bf-40fc-a3bd-799a5b04021e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d2e58fe7-e5cc-4849-acda-631020fde79b">
+                    <TableID>dbo_FactPayments</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e689ff09-7f74-4e1e-9967-214b8bf265aa">
+          <CubeDimensionID>Dim Buildings</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6189af27-b417-4b2a-8573-09dae02e8906">
+              <AttributeID>Building Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c31d0297-8616-4f2f-9d7e-5cdb5888b56f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ea02739a-e124-40d6-853b-f6945d23805b">
+                    <TableID>dbo_FactPayments</TableID>
+                    <ColumnID>BuildingKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="30ac5faa-965c-46f5-afbb-39ea53eaffe0">
+          <CubeDimensionID>Dim Contracts</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="de2471cf-6ff9-4cfc-965b-9d65d73920cb">
+              <AttributeID>Contract Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="62d2539e-aa78-4f41-89cd-6762a7cbb343">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="11f498ac-29a1-43d7-adaa-a414a55d40c2">
+                    <TableID>dbo_FactPayments</TableID>
+                    <ColumnID>ContractKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="d8fcfc5a-eb53-453c-9eab-9edbdda48483">
+    <DataSourceViewID>Rental DW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="6c5dabab-0932-44fc-83c1-e7a912f13094">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;  
+CREATE MEMBER CURRENTCUBE.[Measures].AmountPaidYTD
+ AS Aggregate(
+    PeriodsToDate([DimDate].[Calendar].[Year], [DimDate].[Calendar].CurrentMember),
+    [Measures].[Amount Paid]
+), 
+FORMAT_STRING = "Currency", 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].AmountPaidPY
+ AS (ParallelPeriod(
+    [DimDate].[Calendar].[Year],
+    1,
+    [DimDate].[Calendar].CurrentMember
+),
+[Measures].[Amount Paid]), 
+FORMAT_STRING = "Currency", 
+VISIBLE = 1  ;  
+CREATE MEMBER CURRENTCUBE.[Measures].YoYGrowth
+ AS IIF(
+    [Measures].[Amount Paid PY] = 0,
+    NULL,
+    ([Measures].[Amount Paid] - [Measures].[Amount Paid PY]) / [Measures].[Amount Paid PY]
+), 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].MovingAvg3Months
+ AS Avg(
+    LastPeriods(3, [DimDate].[Calendar].CurrentMember),
+    [Measures].[Amount Paid]
+), 
+FORMAT_STRING = "Currency", 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].TenantRank
+ AS Rank(
+    [DimTenants].[Tenant Name].CurrentMember,
+    Order(
+        [DimTenants].[Tenant Name].[Tenant Name].Members,
+        [Measures].[Amount Paid],
+        BDESC
+    )
+), 
+VISIBLE = 1  ; 
+CREATE DYNAMIC SET CURRENTCUBE.[Top10Tenants]
+ AS TopCount([DimTenants].[Tenant Name].[Tenant Name].Members, 10, [Measures].[Amount Paid]) ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="d2381194-99a0-4d23-9c7e-935ceb98b6a7">
+      <ID>KPI</ID>
+      <Name>RevenueGoal</Name>
+      <AssociatedMeasureGroupID>Fact Payments</AssociatedMeasureGroupID>
+      <Value>[Measures].[Amount Paid]</Value>
+      <Goal>[Measures].[Amount Paid PY] * 1.10</Goal>
+      <Status>Case
+  When KpiValue("Revenue Goal") / KpiGoal("Revenue Goal") &gt;= 1 THEN 1
+  When KpiValue("Revenue Goal") / KpiGoal("Revenue Goal") &gt;= 0.8 THEN 0
+  Else -1
+End</Status>
+      <Trend>Case
+  When [Measures].[Amount Paid] &gt; (ParallelPeriod([DimDate].[Calendar].[Month], 1, [DimDate].[Calendar].CurrentMember), [Measures].[Amount Paid])
+  THEN 1
+  When [Measures].[Amount Paid] &lt; (ParallelPeriod([DimDate].[Calendar].[Month], 1, [DimDate].[Calendar].CurrentMember), [Measures].[Amount Paid])
+  THEN -1
+  Else 0
+End</Trend>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Traffic Light</StatusGraphic>
+    </Kpi>
+  </Kpis>
+</Cube>
